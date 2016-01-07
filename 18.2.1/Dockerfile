@@ -3,7 +3,7 @@ FROM debian:8.2
 
 RUN apt-get update
 
-RUN apt-get install -y build-essential libncurses5-dev openssl libssl-dev fop xsltproc unixodbc-dev git &&\
+RUN apt-get install -y build-essential libncurses5-dev openssl libssl-dev fop xsltproc unixodbc-dev wget git &&\
 	apt-get clean -y
 
 RUN wget http://www.erlang.org/download/otp_src_18.2.1.tar.gz &&\
